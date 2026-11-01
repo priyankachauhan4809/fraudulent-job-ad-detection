@@ -69,7 +69,7 @@ def create_combined_text(df):
     """
 
     combined_text = (
-        df["title"].fillna("") + " " +
+        df["ctitle"].fillna("") + " " +
         df["company_profile"].fillna("") + " " +
         df["description"].fillna("") + " " +
         df["requirements"].fillna("") + " " +
