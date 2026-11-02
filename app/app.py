@@ -29,7 +29,7 @@ def load_model_components():
     model = joblib.load(
         os.path.join(
             MODEL_PATH,
-            "hybrid_xgboost_threshold_070.pkl"
+            "hybrid_xgboost_threshold_tuned.pkl"
         )
     )
 
@@ -566,7 +566,7 @@ if st.button(
 
             if not job_location.strip():
                 indicators.append("Job location is missing")
-                
+
             if telecommuting == "Yes":
 
                 indicators.append(
